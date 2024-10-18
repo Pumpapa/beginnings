@@ -1,0 +1,126 @@
+baseurl = "https://minimal-magic.online"
+title = "Minimal Magic"
+languageCode = "en-us"
+#paginate = "99" # Number of posts per page
+theme = "mainroad"
+disqusShortname = "" # Enable Disqus comments by entering your Disqus shortname
+googleAnalytics = "G-GHZFNCLSZN" # Enable Google Analytics by entering your tracking id
+pagination.pagerSize = "99"
+
+summaryLength = 10
+#[Author] # Used in authorbox
+#  name = "Pum Walters"
+#  bio = "Pum Walters writes about Computer Science, Education and more."
+#  avatar = "img/avatar.png"
+
+
+[Params]
+  subtitle = "" # Deprecated in favor of .Site.Params.logo.subtitle
+  SEOTitle = "Minimal Magic Blog"
+  keyword = "Pum, Walters, System, Engineering, Term, Rewriting, Systems"
+  description = "Pum's blog about Computer Science and more" # Site description. Used in meta description
+  copyright = "Pum Walters" # Footer copyright holder, otherwise will use site title
+  opengraph = true # Enable OpenGraph if true
+  schema = true # Enable Schema
+  #twitter_cards = true # Enable Twitter Cards if true
+  readmore = true # Show "Read more" button in list if true
+  authorbox = false # Show authorbox at bottom of pages if true
+  toc = true # Enable Table of Contents
+  pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
+  post_meta = ["date", "categories", "translations"] # Order of post meta information
+  mainSections = ["post", "blog", "news", "items"] # Specify section pages to show on home page and the "Recent articles" widget
+  dateformat = "2006-01-02" # Change the format of dates
+  mathjax = true # Enable MathJax
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  googleFontsLink = false
+  customCSS = ["css/custom.css","css/syntax.css","css/fonts.css"] # Include custom CSS files
+  customJS = ["js/custom.js"] # Include custom JS files
+  #sectionPagesMenu = 'main'
+
+
+
+[menus]
+  [[menus.main]]
+    name = 'Info'
+    pageRef = '/categories/General/'
+    weight = 15
+  [[menus.main]]
+    name = 'Blog'
+    pageRef = '/categories/blog/'
+    weight = 20
+  [[menus.main]]
+    name = 'SE'
+    pageRef = '/categories/se/'
+    weight = 25
+  [[menus.main]]
+    name = 'TRS'
+    pageRef = '/categories/TRS/'
+    weight = 30
+
+
+
+
+[Params.style.vars]
+  highlightColor = "#e36f00" # Override highlight color#e22d30
+  fontFamilyPrimary = "Roboto, Helvetica, Arial, sans-serif"
+  fontFamilySecondary = "'Open Sans', Monaco, 'Courier New', monospace" # for pre, code, etc
+
+[markup.goldmark.renderer]
+  unsafe= true
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = 'igor'
+    tabWidth = 2
+  
+[Params.logo]
+  image = "images/480px-Tree_of_life_SVG.svg.png" # Logo image. Path relative to "static"
+  title = "Minimal Magic" # Logo title, otherwise will use site title
+  subtitle = "A Blog about Computer Science and more" # Logo subtitle
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "right"  # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "content", "recent", "social", "languages"]
+  # alternatively "ddg-search" can be used, to search via DuckDuckGo
+  # widgets = ["ddg-search", "recent", "categories", "taglist", "social", "languages"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  categories_counter = false # Enable counter for each category in "Categories" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget
+
+[Params.widgets.social]
+  # Enable parts of social widget
+  #facebook = "username"
+  #twitter = "PumWalters"
+  #instagram = "username"
+  #linkedin = "PumWalters"
+  #telegram = "username"
+  #github = "Pumpapa"
+  #gitlab = "Pumpapa"
+  #bitbucket = "Pumpapa"
+  email = "pum@babelfish.nl"
+
+# Custom social links
+#[[Params.widgets.social.custom]]
+#  title = "Youtube"
+#  url = "https://youtube.com/user/username"
+#  icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
+
+#[[Params.widgets.social.custom]]
+#  title = "My Home Page"
+#  url = "http://example.com"
+
