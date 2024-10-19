@@ -6,6 +6,7 @@ theme = "mainroad"
 disqusShortname = "" # Enable Disqus comments by entering your Disqus shortname
 googleAnalytics = "G-GHZFNCLSZN" # Enable Google Analytics by entering your tracking id
 pagination.pagerSize = "99"
+canonifyURLs = true
 
 summaryLength = 10
 #[Author] # Used in authorbox

@@ -1,3 +1,13 @@
+---
+title: "References"
+date: 2021-10-01
+draft: false
+weight: 5000
+categories:
+  - "General"
+tags:
+  - "References"
+---
 Legrand Orange Book Template, licensed under [**CC BY-NC-SA 4.0**](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 Special thanks to my friend Jamie for reviewing and sharing.
